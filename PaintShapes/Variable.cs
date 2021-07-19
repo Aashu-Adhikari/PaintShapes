@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PaintShapes
 {
-    public class Variables
+    public class Variable
     {
         /// <summary>
         /// string variable get and set
