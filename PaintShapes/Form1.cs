@@ -76,7 +76,10 @@ namespace PaintShapes
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            if (saveFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                File.WriteAllText(saveFileDialog1.FileName, richTextBox1.Text);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -92,7 +95,10 @@ namespace PaintShapes
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                richTextBox1.Text = File.ReadAllText(openFileDialog1.FileName);
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -109,7 +115,45 @@ namespace PaintShapes
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            MessageBox.Show("!!!!MAKE SURE YOU ENTER THE SYNTAX AND PARAMATERS CORRECT!!!!\n" +
+                "+++++++++++++++++++++++++++++++\n" +
+                "Hint\n" +
+                "+++++++++++++++++++++++++++++++\n" +
+                "TO paint SHAPES COMMANDS\n" +
+                "-------------------------------\n" +
+                "paint rectamgle 500 100\n" +
+                "paint circle 100 100\n" +
+                "paint polygon\n" +
+                "paint traingle\n" +
+                "-------------------------------\n" +
+                "To paint Shapes With user defined Paremeter\n" +
+                "radius = 100\n" +
+                "paint circle radius\n" +
+                "width = 100\n" +
+                "height = 50\n" +
+                "paint width height\n" +
+                "--------------------------------\n" +
+                "For looping: \n" +
+                "--------------------------------\n" +
+                "r = 100 \n loop 4 \n r + 100 \n paint circle r \n end loop \n " +
+                "--------------------------------\n" +
+                "For if statement:\n" +
+                "--------------------------------\n" +
+                "counter = 5 \n if counter = 5 then \n paint circle 100 \n end if \n" +
+                "--------------------------------\n" +
+                "TO CHANGE THE CORDINATES OF THE SHAPES COMMANDS\n" +
+                "--------------------------------\n" +
+                "move 100 100\n" +
+                "--------------------------------\n" +
+                "TO CHANGE THE COLOR AND SIZE OF THE PEN\n" +
+                "--------------------------------\n" +
+                "color red 23\n" +
+                "---------------------------------\n" +
+                "TO ENABLE FILL OPTION ON AND OFF\n" +
+                "---------------------------------\n" +
+                "fill on\n" +
+                "fill off\n" +
+                "---------------------------------\n");
         }
 
         
