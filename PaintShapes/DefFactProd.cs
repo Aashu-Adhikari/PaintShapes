@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PaintShapes
 {
-    public class FactoryProducerDef
+    public class DefFactProd
     {
         //bool method to check whether the type is shape
         /// <summary>

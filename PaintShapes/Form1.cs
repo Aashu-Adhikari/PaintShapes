@@ -110,7 +110,7 @@ namespace PaintShapes
             variableObjects = new List<Variable>();//creates array of new variable objects
             polygonObjects = new List<Polygon>();//creates array of new polygon objects
             triangleObjects = new List<Triangle>();//creates array of new trangle objects
-            c = Color.Black;//sets the color on startUp
+            c = Color.White;//sets the color on startUp
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -121,25 +121,25 @@ namespace PaintShapes
                 "+++++++++++++++++++++++++++++++\n" +
                 "TO paint SHAPES COMMANDS\n" +
                 "-------------------------------\n" +
-                "paint rectamgle 500 100\n" +
-                "paint circle 100 100\n" +
-                "paint polygon\n" +
-                "paint traingle\n" +
+                "draw rectangle 500 100\n" +
+                "draw circle 100 100\n" +
+                "draw polygon\n" +
+                "draw traingle\n" +
                 "-------------------------------\n" +
                 "To paint Shapes With user defined Paremeter\n" +
                 "radius = 100\n" +
-                "paint circle radius\n" +
+                "draw circle radius\n" +
                 "width = 100\n" +
                 "height = 50\n" +
-                "paint width height\n" +
+                "draw width height\n" +
                 "--------------------------------\n" +
                 "For looping: \n" +
                 "--------------------------------\n" +
-                "r = 100 \n loop 4 \n r + 100 \n paint circle r \n end loop \n " +
+                "r = 100 \n loop 4 \n r + 100 \n draw circle r \n end loop \n " +
                 "--------------------------------\n" +
                 "For if statement:\n" +
                 "--------------------------------\n" +
-                "counter = 5 \n if counter = 5 then \n paint circle 100 \n end if \n" +
+                "counter = 5 \n if counter = 5 then \n draw circle 100 \n end if \n" +
                 "--------------------------------\n" +
                 "TO CHANGE THE CORDINATES OF THE SHAPES COMMANDS\n" +
                 "--------------------------------\n" +
